@@ -1,25 +1,13 @@
-variable "module_depends_on" {
-  type        = list
-  description = "List of modules or resources this module depends on"
-  default     = []
-}
-
 variable "create_operator" {
   type        = bool
   description = "Controls whether Wave Operator should be created (it affects all resources)"
   default     = true
 }
 
-variable "namespace" {
-  type        = string
-  description = "The namespace to install the Wave Operator into."
-  default     = "spot-system"
-}
-
 variable "chart_version" {
   type        = string
   description = "Set the Chart version for the Wave Operator that should be deployed"
-  default     = "0.1.8"
+  default     = "0.2.3"
 }
 
 variable "chart_repository" {

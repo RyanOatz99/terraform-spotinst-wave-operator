@@ -6,9 +6,10 @@ A Terraform module to install Wave Operator.
 
 - [Usage](#usage)
 - [Examples](#examples)
-- [Resources](#resources)
 - [Requirements](#requirements)
 - [Providers](#providers)
+- [Modules](#modules)
+- [Resources](#resources)
 - [Inputs](#inputs)
 - [Outputs](#outputs)
 - [Documentation](#documentation)
@@ -29,43 +30,42 @@ module "wave-operator" {
 
 - [Simple Installation](https://github.com/spotinst/terraform-spotinst-wave-operator/tree/master/examples/simple-installation)
 
-## Resources
-
-This module creates and manages the following resources:
-
-- helm_release
-
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| terraform | >=0.12.0 |
-| helm | >= 2.0.1 |
-| null | >= 3.0.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
+| <a name="requirement_spotinst"></a> [spotinst](#requirement\_spotinst) | >= 2.1.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| helm | >= 2.0.1 |
-| null | >= 3.0.0 |
+| <a name="provider_helm"></a> [helm](#provider\_helm) | n/a |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [helm_release.this](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| chart | Chart name to be deployed | `string` | `"wave-operator"` | no |
-| chart\_repository | Repository URL where to locate the Wave Operator chart | `string` | `"https://charts.spot.io"` | no |
-| chart\_version | Set the Chart version for the Wave Operator that should be deployed | `string` | `"0.1.8"` | no |
-| create\_operator | Controls whether Wave Operator should be created (it affects all resources) | `bool` | `true` | no |
-| module\_depends\_on | List of modules or resources this module depends on | `list` | `[]` | no |
-| namespace | The namespace to install the Wave Operator into. | `string` | `"spot-system"` | no |
+| <a name="input_chart"></a> [chart](#input\_chart) | Chart name to be deployed | `string` | `"wave-operator"` | no |
+| <a name="input_chart_repository"></a> [chart\_repository](#input\_chart\_repository) | Repository URL where to locate the Wave Operator chart | `string` | `"https://charts.spot.io"` | no |
+| <a name="input_chart_version"></a> [chart\_version](#input\_chart\_version) | Set the Chart version for the Wave Operator that should be deployed | `string` | `"0.2.3"` | no |
+| <a name="input_create_operator"></a> [create\_operator](#input\_create\_operator) | Controls whether Wave Operator should be created (it affects all resources) | `bool` | `true` | no |
 
 ## Outputs
 
-No output.
-
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Documentation

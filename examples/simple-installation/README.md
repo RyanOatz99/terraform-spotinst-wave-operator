@@ -17,14 +17,23 @@ No requirements.
 
 ## Providers
 
-No provider.
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_wave-operator"></a> [wave-operator](#module\_wave-operator) | ../.. |  |
+
+## Resources
+
+No resources.
 
 ## Inputs
 
-No input.
+No inputs.
 
 ## Outputs
 
-No output.
-
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
