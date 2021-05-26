@@ -4,7 +4,7 @@ terraform {
   required_providers {
     spotinst = {
       source  = "hashicorp/helm"
-      version = ">= 2.1.1"
+      version = "~> 2.1"
     }
   }
 }

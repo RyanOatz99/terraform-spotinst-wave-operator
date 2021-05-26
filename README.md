@@ -36,7 +36,7 @@ module "wave-operator" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
-| <a name="requirement_spotinst"></a> [spotinst](#requirement\_spotinst) | >= 2.1.1 |
+| <a name="requirement_spotinst"></a> [spotinst](#requirement\_spotinst) | ~> 2.1 |
 
 ## Providers
 
